@@ -1,0 +1,39 @@
+body {
+  background-image: url("../img/food.png");
+  font-family: Arial, sans-serif;
+}
+li {
+  padding: 5px;
+  margin: 5px;
+}
+h1 {
+  color: rgb(177, 18, 18);
+  font-size: 300%;
+}
+#content{
+  background: #f0d8a8a4;
+  width: 600px;
+  margin: auto;
+  border-radius: 25px;
+}
+.label {
+  font-weight: bold;
+}
+.create-form {
+  padding: 5px;
+  margin: 5px;
+}
+.form-group {
+  margin-bottom: 5px;
+} 
+
+.center {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+

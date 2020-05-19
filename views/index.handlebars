@@ -1,0 +1,30 @@
+<h1 class="center text-center">Welcome to Burger-Shack</h1>
+<div class="center text-center">
+<iframe src="https://giphy.com/embed/3o85xJx8kj5ryC9aEg" width="240" height="240" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</div>
+<div id="content">
+  <h2 class="center text-center">On the pass, getting cold</h2>
+  <ol class="center">
+    {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
+  </ol>
+  <h2 class="center text-center">Eaten Burgers</h2>
+  <ol class="center">
+    {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
+  </ol>
+
+  <h2 class="center text-center">Make a Burger</h2>
+  <form class="create-form center">
+    <div class="form-group">
+      <label for="bu">Burger Name:</label>
+      <input type="text" id="bu" name="burger_name">
+    </div>
+    <div class="form-group">
+      <label for="devoured">Devoured?</label>
+      <br>
+      <input type="radio" name="devoured" value="1" > Devoured
+      <br>
+      <input type="radio" name="devoured" value="0" checked> Not eaten yet
+    </div>
+    <button type="submit">Make Burger</button>
+  </form>
+</div>
